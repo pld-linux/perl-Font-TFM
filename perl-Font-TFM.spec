@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl Font::TFM
 Summary(zh_CN):	Font::TFM Perl дё©И
 Name:		perl-Font-TFM
 Version:	0.130
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
