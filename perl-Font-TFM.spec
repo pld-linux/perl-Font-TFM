@@ -10,7 +10,7 @@ Summary(fr):	Module Perl Font::TFM
 Summary(it):	Modulo di Perl Font::TFM
 Summary(ja):	Font::TFM Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Font::TFM ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Font::TFM
+Summary(nb):	Perlmodul Font::TFM
 Summary(pl):	Modu³ Perla Font::TFM
 Summary(pt):	Módulo de Perl Font::TFM
 Summary(pt_BR):	Módulo Perl Font::TFM
