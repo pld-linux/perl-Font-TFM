@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Font
-%define	pnam	TFM
+%define		pdir	Font
+%define		pnam	TFM
 Summary:	Font::TFM - read information from TeX font metric files
 Summary(pl):	Font::TFM - odczyt informacji z plików metryk fontów TeX-a
 Name:		perl-Font-TFM
