@@ -41,7 +41,7 @@ Font::TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 %patch0 -p1
 
 %build
-perl Makefile.PL </dev/null
+%{__perl} Makefile.PL </dev/null
 %{__make}
 
 %install
