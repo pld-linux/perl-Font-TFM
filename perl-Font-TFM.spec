@@ -1,14 +1,30 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Font
-%define	pnam	TFM
-Summary:	Font::TFM perl module
-Summary(pl):	Modu³ perla Font::TFM
+%define		pdir	Font
+%define		pnam	TFM
+Summary:	Font::TFM Perl module
+Summary(cs):	Modul Font::TFM pro Perl
+Summary(da):	Perlmodul Font::TFM
+Summary(de):	Font::TFM Perl Modul
+Summary(es):	Módulo de Perl Font::TFM
+Summary(fr):	Module Perl Font::TFM
+Summary(it):	Modulo di Perl Font::TFM
+Summary(ja):	Font::TFM Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Font::TFM ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Font::TFM
+Summary(pl):	Modu³ Perla Font::TFM
+Summary(pt):	Módulo de Perl Font::TFM
+Summary(pt_BR):	Módulo Perl Font::TFM
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Font::TFM
+Summary(sv):	Font::TFM Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Font::TFM
+Summary(zh_CN):	Font::TFM Perl Ä£¿é
 Name:		perl-Font-TFM
 Version:	0.130
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Patch0:		%{name}-fontpath.patch
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
@@ -22,9 +38,10 @@ Font::TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
-perl Makefile.PL
+perl Makefile.PL </dev/null
 %{__make}
 
 %install
