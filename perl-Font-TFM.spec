@@ -43,7 +43,7 @@ Font::TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 
 %build
 %{__perl} Makefile.PL </dev/null \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
