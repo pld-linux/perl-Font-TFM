@@ -20,13 +20,13 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Font::TFM
 Summary(zh_CN):	Font::TFM Perl Ä£¿é
 Name:		perl-Font-TFM
 Version:	0.130
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-fontpath.patch
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,7 +41,8 @@ Font::TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL </dev/null
+%{__perl} Makefile.PL </dev/null \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -55,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Font/TFM.pm
+%{perl_vendorlib}/Font/TFM.pm
 %{_mandir}/man3/*
