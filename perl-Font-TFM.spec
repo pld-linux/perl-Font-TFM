@@ -9,7 +9,7 @@ Summary:	Font::TFM - read information from TeX font metric files
 Summary(pl):	Font::TFM - odczyt informacji z plików metryk fontów TeX-a
 Name:		perl-Font-TFM
 Version:	0.130
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
