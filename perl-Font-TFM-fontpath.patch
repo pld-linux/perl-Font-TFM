@@ -1,0 +1,31 @@
+--- Font-TFM-0.130/Makefile.PL.orig	Tue Jul 23 13:50:29 2002
++++ Font-TFM-0.130/Makefile.PL	Tue Jul 23 13:52:57 2002
+@@ -1,16 +1,20 @@
+ 
+ use ExtUtils::MakeMaker;
+ 
+-my $dir = '.:/packages/share/tex/lib/fonts';
++my $dir = '.:/usr/share/texmf/fonts/tfm:/usr/share/texmf/source/generic/xypic/texfonts:/usr/share/texmf/source/latex/concmath/fonts/tfm:/usr/share/texmf/source/latex/sueterlin';
+ 
+ eval 'use Font::TFM';
+-if ($@ eq '' and defined $Font::TFM::TEXFONTSDIR) {
+-	print <<EOF;
+-	It seems you already have Font::TFM installed -- you might
+-	want to keep the old value of TEXFONTSDIR.
+-EOF
+-	$dir = $Font::TFM::TEXFONTSDIR;
+-}
++
++# Commented out for PLD: don't attempt to use previous (probably bogus)
++#                        config
++#
++#if ($@ eq '' and defined $Font::TFM::TEXFONTSDIR) {
++#	print <<EOF;
++#	It seems you already have Font::TFM installed -- you might
++#	want to keep the old value of TEXFONTSDIR.
++#EOF
++#	$dir = $Font::TFM::TEXFONTSDIR;
++#}
+ 
+ $dir = prompt "Where should I search for tfm files (value of \$Font::TFM::TEXFONTSDIR)\n", $dir;
+ 
