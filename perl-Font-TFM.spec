@@ -4,12 +4,11 @@
 Summary:	Font::TFM perl module
 Summary(pl):	Modu³ perla Font::TFM
 Name:		perl-Font-TFM
-Version:	0.110
-Release:	4
+Version:	0.130
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-Patch0:		%{name}-fontsdir.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
@@ -23,7 +22,6 @@ Font::TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p0
 
 %build
 perl Makefile.PL
