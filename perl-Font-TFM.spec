@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Font
 %define	pnam	TFM
-%include	/usr/lib/rpm/macros.perl
 Summary:	Font-TFM perl module
 Summary(pl):	Modu³ perla Font-TFM
 Name:		perl-Font-TFM
 Version:	0.110
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Font-TFM - read and work with TeX font metric files.
 Font-TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 
 %prep
-%setup -q -n Font-TFM-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p0
 
 %build
