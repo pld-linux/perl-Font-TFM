@@ -27,7 +27,7 @@ Font-TFM umo¿liwia pracê na plikach metryk fontów TeXa.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
