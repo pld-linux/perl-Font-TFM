@@ -6,7 +6,7 @@
 %define		pdir	Font
 %define		pnam	TFM
 Summary:	Font::TFM - read information from TeX font metric files
-Summary(pl):	Font::TFM - odczyt informacji z plików metryk fontów TeX-a
+Summary(pl.UTF-8):   Font::TFM - odczyt informacji z plikÃ³w metryk fontÃ³w TeX-a
 Name:		perl-Font-TFM
 Version:	0.130
 Release:	5
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Font::TFM Perl module is for reading and working with TeX font metric
 files.
 
-%description -l pl
-Modu³ Perla Font::TFM umo¿liwia pracê na plikach metryk fontów TeXa.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Font::TFM umoÅ¼liwia pracÄ™ na plikach metryk fontÃ³w TeXa.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
