@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Font
 %define		pnam	TFM
+%include	/usr/lib/rpm/macros.perl
 Summary:	Font::TFM - read information from TeX font metric files
 Summary(pl.UTF-8):	Font::TFM - odczyt informacji z plików metryk fontów TeX-a
 Name:		perl-Font-TFM
@@ -16,6 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3ae79cc6321df135e14ea50227543415
 Patch0:		%{name}-fontpath.patch
+URL:		http://search.cpan.org/dist/Font-TFM/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
