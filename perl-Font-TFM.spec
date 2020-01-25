@@ -4,7 +4,6 @@
 
 %define		pdir	Font
 %define		pnam	TFM
-%include	/usr/lib/rpm/macros.perl
 Summary:	Font::TFM - read information from TeX font metric files
 Summary(pl.UTF-8):	Font::TFM - odczyt informacji z plików metryk fontów TeX-a
 Name:		perl-Font-TFM
